@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мій фотоблог</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 60px;
+        }
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        .main-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .main-section article {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .main-section article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        aside {
+            flex: 0 0 30%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            .main-section article, aside {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header" id="site-header">
+        <h1>Ласкаво просимо до мого фотоблогу!</h1>
+        <nav>
+            <a href="index.html">Головна</a> |
+            <a href="about.html" target="_blank">Про мене</a> |
+            <a href="contact.html" target="_blank">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Мої фотографії</h2>
+        <section class="main-section">
+            <article>
+                <h3>Фото 1</h3>
+                <img src="image/nature1.jpg" alt="Опис фото 1">
+                <p>Чоловік на пристанні, який дивиться на світанок.</p>
+            </article>
+            <article>
+                <h3>Фото 2</h3>
+                <img src="image/nature2.jpg" alt="Опис фото 2">
+                <p>Вид з квадрокоптера на річку з лісами.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Цікаві факти</h2>
+            <p>Більше інформації про мене:</p>
+            <ul>
+                <li>Я - фотограф, який готовий поділитися з вами моїми знімками.</li>
+                <li>Контактні данні:</li>
+                <ul>
+                    <li>Електронна пошта: example@gmail.com</li>
+                    <li>Телефон: +(380)677866558</li>
+                </ul>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Мій фотоблог на початок 2024 року</p>
+    </footer>
+</body>
+</html>
